@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tron">
+
+    <TextView
+        android:id="@+id/tv_username2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sarpanch"
+        android:background="@drawable/translucent_back"
+        android:gravity="center"
+        android:text="NAME"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:textColor="#7CFC00"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="WALLET"
+        android:textColor="#7CFC00"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username2" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingVertical="30dp"
+        android:text=""
+        android:textColor="#7CFC00"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label" />
+
+    <TextView
+        android:id="@+id/tv_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="Items to ship"
+        android:textColor="#7CFC00"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wallet" />
+
+    <TextView
+        android:id="@+id/tv_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="75dp"
+        android:paddingVertical="30dp"
+        android:text=""
+        android:textColor="#7CFC00"
+        android:textSize="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label2" />
+
+    <TextView
+        android:id="@+id/tv_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="Favourites"
+        android:textColor="#7CFC00"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wallet" />
+
+    <TextView
+        android:id="@+id/tv_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="75dp"
+        android:paddingVertical="30dp"
+        android:text=""
+        android:textColor="#7CFC00"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label3" />
+
+    <ImageView
+        android:id="@+id/shop_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favourites"
+        app:srcCompat="@drawable/shop_button" />
+
+
+</android.support.constraint.ConstraintLayout>

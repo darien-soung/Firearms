@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Firearms</string>
+    <string name="currency_prompt">Choose a currency</string>
+    <string-array name="currency_array">
+        <item>US Dollar</item>
+        <item>Malaysia Ringgit</item>
+    </string-array>
+</resources>

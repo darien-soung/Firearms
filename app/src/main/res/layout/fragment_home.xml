@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tron">
+
+    <TextView
+        android:id="@+id/tv_grenade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="7dp"
+        android:text="Grenade"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_grenade" />
+
+    <TextView
+        android:id="@+id/tv_smg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="7dp"
+        android:text="SMG"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_smg" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/translucent_back"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:text="Welcome, "
+        android:textColor="#7CFC00"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:textColor="#7CFC00"
+        android:textSize="18dp"
+        android:text="Select your category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+    <ImageView
+        android:id="@+id/iv_rifle"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/image_border"
+        app:layout_column="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_row="0"
+        app:srcCompat="@drawable/ak47" />
+
+    <TextView
+        android:id="@+id/tv_rifle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="7dp"
+        android:text="Rifles"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rifle" />
+
+    <ImageView
+        android:id="@+id/iv_sniper"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/image_border"
+        app:layout_column="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_rifle"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_row="0"
+        app:srcCompat="@drawable/awp" />
+
+    <TextView
+        android:id="@+id/tv_sniper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="33dp"
+        android:paddingVertical="7dp"
+        android:text="Sniper"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sniper" />
+
+    <ImageView
+        android:id="@+id/iv_smg"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/image_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rifle"
+        app:srcCompat="@drawable/ump" />
+
+    <ImageView
+        android:id="@+id/iv_grenade"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/image_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_smg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sniper"
+        app:srcCompat="@drawable/he_grenade" />
+
+</android.support.constraint.ConstraintLayout>

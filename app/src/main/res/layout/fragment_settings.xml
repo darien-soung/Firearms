@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tron">
+
+    <!--
+        User
+        -profile details (under one category)
+
+        App
+        -notifications
+        -currency
+
+        Other
+        -contact us
+        -logout
+    -->
+
+    <TextView
+        android:id="@+id/tv_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/translucent_back"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:text="User"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="Username"
+        android:textColor="#7CFC00"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label1" />
+
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#7CFC00"
+        android:ems="10"
+        android:fontFamily="@font/sarpanch"
+        android:textColor="#7CFC00"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <Button
+        android:id="@+id/btn_changeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="7dp"
+        android:text="Change"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ed_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="Password"
+        android:textColor="#7CFC00"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_username" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#7CFC00"
+        android:ems="10"
+        android:fontFamily="@font/sarpanch"
+        android:inputType="textPassword"
+        android:textColor="#7CFC00"
+        android:textSize="15dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <Button
+        android:id="@+id/btn_changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tx_login"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="7dp"
+        android:text="Change"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+
+    <TextView
+        android:id="@+id/tv_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/translucent_back"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:text="App"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/notification_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:background="#407CFC00"
+        android:fontFamily="@font/sarpanch"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Notification"
+        android:textColor="#7CFC00"
+        android:textSize="20sp"
+        android:theme="@style/GreenSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label2" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sarpanch"
+        android:text="Currency"
+        android:textColor="#7CFC00"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_switch" />
+
+    <Spinner
+        android:id="@+id/currency_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#407CFC00"
+        android:entries="@array/currency_array"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:popupBackground="#000000"
+        android:prompt="@string/currency_prompt"
+        android:textColor="#7CFC00"
+        android:textSize="20sp"
+        android:dropDownWidth="700px"
+        android:theme="@style/mySpinnerItemStyle"
+        app:layout_constraintStart_toEndOf="@+id/tv_currency"
+        app:layout_constraintTop_toBottomOf="@+id/notification_switch" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/translucent_back"
+        android:fontFamily="@font/sarpanch"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:text="Other"
+        android:textColor="#7CFC00"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currency" />
+
+    <Button
+        android:id="@+id/bt_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_login"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
+        android:text="Contact Us"
+        android:textColor="#7CFC00"
+        android:fontFamily="@font/sarpanch"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_other" />
+
+    <Button
+        android:id="@+id/bt_adminPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbox_yellow"
+        android:fontFamily="@font/sarpanch"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
+        android:text="Admin Panel"
+        android:textColor="#FFFF00"
+        android:visibility="gone"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_contact" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbox_red"
+        android:fontFamily="@font/sarpanch"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
+        android:text="Log out"
+        android:textColor="#FF0000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_adminPanel" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
